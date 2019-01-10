@@ -1,0 +1,23 @@
+div.thepictures div.col-lg-3.col-md-3.col-sm-3 {
+    padding:10px;
+}
+
+.lead {
+    font-family: 'Lobster', cursive;
+}
+.display-4 {
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-color: #abdcd6;
+}
+
+.other-color {
+    background:#EB593C;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
