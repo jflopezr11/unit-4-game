@@ -29,7 +29,7 @@ function reset(){
 function hooray(){
     alert ("You won!");
     wins++;
-    $('winCount').text(wins);
+    $('#winCount').text(wins);
     reset();
 }
 
@@ -54,7 +54,7 @@ $('#gemOne').on('click', function(){
 });
 
 $('#gemTwo').on('click', function(){
-    userTotal = userTotal + cry1;
+    userTotal = userTotal + cry2;
     console.log("New userTotal=" + userTotal);
     $('#score').text(userTotal);
 
@@ -67,7 +67,7 @@ $('#gemTwo').on('click', function(){
 });
 
 $('#gemThree').on('click', function(){
-    userTotal = userTotal + cry1;
+    userTotal = userTotal + cry3;
     console.log("New userTotal=" + userTotal);
     $('#score').text(userTotal);
 
@@ -80,7 +80,7 @@ $('#gemThree').on('click', function(){
 });
 
 $('#gemFour').on('click', function(){
-    userTotal = userTotal + cry1;
+    userTotal = userTotal + cry4;
     console.log("New userTotal=" + userTotal);
     $('#score').text(userTotal);
 
