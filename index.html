@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -25,35 +25,52 @@
             </div>
         </div>
     </div>
+    <br><br>
     <div class= "container">
-       <div class="row">
+       <div class="row wrapper">
             <div class="col-sm">
                     Target number:
+                <p id ="target"></p>
             </div>
             <div class="col-sm">
-                Your number:
+                    Your number:
+                <p id= "score"></p>
             </div>
         </div>
     </div>
-    
+    <br><br>
     <div class="container">
         <div class= "row thepictures">
             <div class= "col-lg-3 col-md-3 col-sm-3">
-                <img src="assets/images/purplecrystal.PNG" class="img-fluid" alt="clear diamond">
+                <img src="assets/images/purplecrystal.PNG" class="img-fluid" id= "gemOne" alt="purple gem">
             </div>
             <div class= "col-lg-3 col-md-3 col-sm-3">
-                <img src="assets/images/bluecrystal.PNG" class="img-fluid" alt="yellow diamond">
+                <img src="assets/images/bluecrystal.PNG" class="img-fluid" id= "gemTwo" alt="blue gem">
             </div>
             <div class= "col-lg-3 col-md-3 col-sm-3">
-                <img src= "assets/images/greencrystal.PNG" class="img-fluid" alt="blue diamond">
+                <img src= "assets/images/greencrystal.PNG" class="img-fluid" id= "gemThree" alt="green gem">
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <img src="assets/images/Redcrystal.PNG" class="img-fluid" alt="black diamond">
+                <img src="assets/images/Redcrystal.PNG" class="img-fluid" id= "gemFour" alt="red gem">
             </div>
         </div>
     </div>
+    <br><br>
+
+    <div class= "container wrapper">
+            <div class="row">
+                 <div class="col-sm">
+                        Your Wins:
+                    <p id = "winCount"></p>
+                 </div>
+                 <div class="col-sm">
+                        Your Losses
+                    <p id = "lossCount"></p>
+                 </div>
+             </div>
+         </div>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script src="assets/javascript/game.js"></script>
 

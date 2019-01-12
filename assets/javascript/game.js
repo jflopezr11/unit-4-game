@@ -1,9 +1,93 @@
+var Random =Math.floor(Math.random() * 101+19)
 
-// a game with 4 crystal and Random Result
-// Every crystal needs to have a random number between 1 - 12
-// When clicking any CRYSTAL, it should adding with the previous result
-// Until it equals the Random Result
-// If it is greater than the Random Result, we decrement a lost counter
-// If it is equal, then we increment a win counter
-// A new random number should be generate every single time we win or lost
-// to those 4 crystals
+$("#target").text(Random);
+
+var cry1= Math.floor(Math.random() * 11) + 1;
+var cry2= Math.floor(Math.random() * 11) + 1;
+var cry3= Math.floor(Math.random() * 11) + 1;
+var cry4= Math.floor(Math.random() * 11) + 1;
+
+var userTotal= 0;
+var  wins= 0;
+var losses= 0;
+
+$("#winCount").text(wins);
+$("#lossCount").text(losses)
+
+function reset(){
+    Random = Math.floor(Math.random() * 101 + 19)
+    console.log(Random);
+    $('#target').text(Random);
+    var cry1= Math.floor(Math.random()*11+1)
+    var cry2= Math.floor(Math.random()*11+1)
+    var cry3= Math.floor(Math.random()*11+1)
+    var cry4= Math.floor(Math.random()*11+1)
+    userTotal = 0
+    $('#score').text(userTotal);
+};
+
+function hooray(){
+    alert ("You won!");
+    wins++;
+    $('winCount').text(wins);
+    reset();
+}
+
+function sorry(){
+    alert ("Sorry buddy!");
+    losses++;
+    $('#lossCount').text(losses);
+    reset();
+}
+
+$('#gemOne').on('click', function(){
+    userTotal = userTotal + cry1;
+    console.log("New userTotal=" + userTotal);
+    $('#score').text(userTotal);
+
+    if( userTotal == Random){
+        hooray();
+    }
+    else if (userTotal > Random){
+        sorry();
+    }
+});
+
+$('#gemTwo').on('click', function(){
+    userTotal = userTotal + cry1;
+    console.log("New userTotal=" + userTotal);
+    $('#score').text(userTotal);
+
+    if( userTotal == Random){
+        hooray();
+    }
+    else if (userTotal > Random){
+        sorry();
+    }
+});
+
+$('#gemThree').on('click', function(){
+    userTotal = userTotal + cry1;
+    console.log("New userTotal=" + userTotal);
+    $('#score').text(userTotal);
+
+    if( userTotal == Random){
+        hooray();
+    }
+    else if (userTotal > Random){
+        sorry();
+    }
+});
+
+$('#gemFour').on('click', function(){
+    userTotal = userTotal + cry1;
+    console.log("New userTotal=" + userTotal);
+    $('#score').text(userTotal);
+
+    if( userTotal == Random){
+        hooray();
+    }
+    else if (userTotal > Random){
+        sorry();
+    }
+});
