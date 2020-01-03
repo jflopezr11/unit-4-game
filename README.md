@@ -1,2 +1,2 @@
 # unit-4-game
-another homework and game
+Please checkout the game [Here] (https://jflopezr11.github.io/unit-4-game/)
